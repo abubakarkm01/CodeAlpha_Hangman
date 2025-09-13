@@ -1,0 +1,5 @@
+Name: Abu bakar
+Email:abubakarmwt707@gmail.com
+GitHub repo link: https://github.com/abubakarkm01/CodeAlpha_Hangman
+
+Task completed Task 1 : Hangman Game Short description: A simple text based Hangman implemented in Python.
