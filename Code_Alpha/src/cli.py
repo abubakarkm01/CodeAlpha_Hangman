@@ -8,7 +8,7 @@ def play():
     words = load_words_from_file(data_file)
     secret = choose_random_word(words)
 
-    # ✅ Debug line (put it exactly here)
+    # Debug line (put it exactly here)
     print(f"DEBUG: secret_word = '{secret}'")
 
     game = HangmanGame(secret)
@@ -40,17 +40,18 @@ def play():
         guess = get_valid_guess(game.guessed_letters)
         result = game.guess(guess)
         if result is None:
-            print("⚠ Already guessed this one.")
+            print(" Already guessed this one.")
         elif result:
-            print("✅ Correct!")
+            print("Correct!")
         else:
-            print("❌ Wrong!")
+            print("Wrong!")
         print(game.display_progress())
 
     if game.is_won():
-        print(f"\n🎉 You WIN! The word was: {secret.upper()}")
+        print(f"\n You WIN! The word was: {secret.upper()}")
     else:
-        print(f"\n💥 You LOSE! The word was: {secret.upper()}")
+        print(f"\n You LOSE! The word was: {secret.upper()}")
 
 if __name__ == "__main__":
     play()
+
